@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming-Events</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<section class="events" id="events">
+    <div class="jumbotron narrow corporate-events text-white" style="background-color: #eb6e34;" data-aos="fade-up">
+        <div class="col-12 text-center">
+            <h3 class="heading">UPCOMING EVENTS</h3>
+            <div class="heading-underline"></div>
+        </div>
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <!-- Event Card 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100 shadow-lg position-relative">
+                        <div class="position-absolute plus-icon text-secondary" style="top: 10px; right: 10px; font-size: 24px; cursor: pointer;" onclick="eventAdded()">
+                            +
+                        </div>
+                        <div class="card-body text-center p-0 h-100 d-flex flex-column">
+                            <div class="bg-light p-3">
+                                <span class="text-muted d-block" style="font-size: 14px;">APRIL</span>
+                                <span class="display-4 font-weight-bold text-dark">10</span>
+                                <span class="text-muted" style="font-size: 14px;">2025</span>
+                            </div>
+                            <div class="event-content bg-dark text-white py-3 flex-grow-1">
+                                <strong>Spring Fest 2025</strong><br>
+                                <small>UIT RGPV College Ground</small><br>
+                                <p class="mt-2">Join us for a day of fun, games, and performances at our annual Spring Fest!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100 shadow-lg position-relative">
+                        <div class="position-absolute plus-icon text-secondary" style="top: 10px; right: 10px; font-size: 24px; cursor: pointer;" onclick="eventAdded()">
+                            +
+                        </div>
+                        <div class="card-body text-center p-0 h-100 d-flex flex-column">
+                            <div class="bg-light p-3">
+                                <span class="text-muted d-block" style="font-size: 14px;">DECEMBER</span>
+                                <span class="display-4 font-weight-bold text-dark">15</span>
+                                <span class="text-muted" style="font-size: 14px;">2024</span>
+                            </div>
+                            <div class="event-content bg-dark text-white py-3 flex-grow-1">
+                                <strong>Guest Lecture: Innovations in Technology</strong><br>
+                                <small>SOIT RGPV Auditorium</small><br>
+                                <p class="mt-2">Attend a guest lecture by renowned tech entrepreneur who will discuss the latest innovations and trends in technology.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100 shadow-lg position-relative">
+                        <div class="position-absolute plus-icon text-secondary" style="top: 10px; right: 10px; font-size: 24px; cursor: pointer;" onclick="eventAdded()">
+                            +
+                        </div>
+                        <div class="card-body text-center p-0 h-100 d-flex flex-column">
+                            <div class="bg-light p-3">
+                                <span class="text-muted d-block" style="font-size: 14px;">NOVEMBER</span>
+                                <span class="display-4 font-weight-bold text-dark">20</span>
+                                <span class="text-muted" style="font-size: 14px;">2024</span>
+                            </div>
+                            <div class="event-content bg-dark text-white py-3 flex-grow-1">
+                                <strong>Career Fair 2024</strong><br>
+                                <small>Main Hall</small><br>
+                                <p class="mt-2">Meet potential employers and explore job opportunities at our annual Career Fair. Bring your resume and be ready to network!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of row for event cards -->
+            
+            <!-- Explore Events Button -->
+            <div class="event-contentsss">
+                <a href="events.html" class="btn" >
+                    <button style="font-size: 35px;border-radius: 10px; cursor:pointer">Explore Events</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function eventAdded() {
+            alert("Event added successfully!");
+        }
+    </script>
+    <script>
+        // GSAP animation
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Selects all cards
+        const cards = document.querySelectorAll('.card');
+
+        // Animate cards on scroll
+        cards.forEach(card => {
+            gsap.from(card, {
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 80%", // Trigger when card is 80% from the top of the viewport
+                    toggleActions: "play none none reverse",
+                },
+                opacity: 0,
+                y: 30, // Move down 30 pixels
+                duration: 0.5,
+            });
+        });
+    </script>
+    </section>
+   
+</body>
+
+
+    
+    </html>

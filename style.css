@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  #events {
+    padding: 40px 20px;
+  }
+  .container{
+    min-height: 600px;
+  }
+  
+  .heading {
+    padding-top: 35px;
+    font-size: 2rem;
+    color: black;
+    text-transform: uppercase;
+    text-align:center
+  }
+  
+  .heading-underline {
+    width: 60px;
+    height: 4px;
+    background-color: #ffcc00;
+    margin: 10px auto;
+    text-align:center ;
+  }
+  
+  .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width:300px;
+    height:400px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin:15px;
+
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-body {
+  
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .card-body .bg-light {
+    padding: 10px 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .card-body .bg-light span {
+    display: block;
+    font-size: 16px;
+  }
+  
+  .card-body .display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .card-body .event-content {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    flex-grow: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .event-content strong {
+    font-size: 1.2rem;
+  }
+  
+  .event-content small {
+    font-size: 0.9rem;
+    color: #ddd;
+  }
+  
+  .event-content p {
+    margin-top: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .plus-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .plus-icon:hover {
+    color: #ff3300;
+  }
+  
+  .event-contentsss  {
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    height:100%;
+    margin-top: 50px;
+  }
+  .event-contentsss .btn{
+    text-transform: uppercase;
+    font-weight:bold;
+    text-decoration: none;
+    font-size:1.2rem;
+    display:inline-block;
+    
+  }
+  
+  .event-contentsss .btn:hover {
+    background-color: #eb6e34;
+    color: #fff;
+  }
+  
